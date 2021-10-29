@@ -59,7 +59,7 @@ class AzureSearchIndexWriteBehaviorType(with_metaclass(_CaseInsensitiveEnumMeta,
     MERGE = "Merge"
     UPLOAD = "Upload"
 
-class BlobEventTypes(with_metaclass(_CaseInsensitiveEnumMeta, str, Enum)):
+class BlobEventType(with_metaclass(_CaseInsensitiveEnumMeta, str, Enum)):
 
     MICROSOFT_STORAGE_BLOB_CREATED = "Microsoft.Storage.BlobCreated"
     MICROSOFT_STORAGE_BLOB_DELETED = "Microsoft.Storage.BlobDeleted"

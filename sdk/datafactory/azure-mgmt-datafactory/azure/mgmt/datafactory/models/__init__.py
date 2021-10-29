@@ -279,6 +279,7 @@ try:
     from ._models_py3 import FileSystemSink
     from ._models_py3 import FileSystemSource
     from ._models_py3 import FilterActivity
+    from ._models_py3 import Flowlet
     from ._models_py3 import ForEachActivity
     from ._models_py3 import FormatReadSettings
     from ._models_py3 import FormatWriteSettings
@@ -974,6 +975,7 @@ except (SyntaxError, ImportError):
     from ._models import FileSystemSink  # type: ignore
     from ._models import FileSystemSource  # type: ignore
     from ._models import FilterActivity  # type: ignore
+    from ._models import Flowlet  # type: ignore
     from ._models import ForEachActivity  # type: ignore
     from ._models import FormatReadSettings  # type: ignore
     from ._models import FormatWriteSettings  # type: ignore
@@ -1402,7 +1404,7 @@ from ._data_factory_management_client_enums import (
     AvroCompressionCodec,
     AzureFunctionActivityMethod,
     AzureSearchIndexWriteBehaviorType,
-    BlobEventTypes,
+    BlobEventType,
     CassandraSourceReadConsistencyLevels,
     CompressionCodec,
     CopyBehaviorType,
@@ -1768,6 +1770,7 @@ __all__ = [
     'FileSystemSink',
     'FileSystemSource',
     'FilterActivity',
+    'Flowlet',
     'ForEachActivity',
     'FormatReadSettings',
     'FormatWriteSettings',
@@ -2194,7 +2197,7 @@ __all__ = [
     'AvroCompressionCodec',
     'AzureFunctionActivityMethod',
     'AzureSearchIndexWriteBehaviorType',
-    'BlobEventTypes',
+    'BlobEventType',
     'CassandraSourceReadConsistencyLevels',
     'CompressionCodec',
     'CopyBehaviorType',

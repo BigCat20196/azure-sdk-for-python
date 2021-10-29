@@ -8198,7 +8198,7 @@ class BlobEventsTrigger(MultiplePipelineTrigger):
     :param ignore_empty_blobs: If set to true, blobs with zero bytes will be ignored.
     :type ignore_empty_blobs: bool
     :param events: Required. The type of events that cause this trigger to fire.
-    :type events: list[str or ~azure.mgmt.datafactory.models.BlobEventTypes]
+    :type events: list[str or ~azure.mgmt.datafactory.models.BlobEventType]
     :param scope: Required. The ARM resource ID of the Storage Account.
     :type scope: str
     """
@@ -11051,7 +11051,7 @@ class DataFlow(msrest.serialization.Model):
     """Azure Data Factory nested object which contains a flow with data movements and transformations.
 
     You probably want to use the sub-classes and not this class directly. Known
-    sub-classes are: MappingDataFlow, WranglingDataFlow.
+    sub-classes are: Flowlet, MappingDataFlow, WranglingDataFlow.
 
     All required parameters must be populated in order to send to Azure.
 
@@ -11078,7 +11078,7 @@ class DataFlow(msrest.serialization.Model):
     }
 
     _subtype_map = {
-        'type': {'MappingDataFlow': 'MappingDataFlow', 'WranglingDataFlow': 'WranglingDataFlow'}
+        'type': {'Flowlet': 'Flowlet', 'MappingDataFlow': 'MappingDataFlow', 'WranglingDataFlow': 'WranglingDataFlow'}
     }
 
     def __init__(
@@ -11190,6 +11190,8 @@ class DataFlowDebugPackage(msrest.serialization.Model):
     :type session_id: str
     :param data_flow: Data flow instance.
     :type data_flow: ~azure.mgmt.datafactory.models.DataFlowDebugResource
+    :param data_flows: List of Data flows.
+    :type data_flows: list[~azure.mgmt.datafactory.models.DataFlowDebugResource]
     :param datasets: List of datasets.
     :type datasets: list[~azure.mgmt.datafactory.models.DatasetDebugResource]
     :param linked_services: List of linked services.
@@ -11204,6 +11206,7 @@ class DataFlowDebugPackage(msrest.serialization.Model):
         'additional_properties': {'key': '', 'type': '{object}'},
         'session_id': {'key': 'sessionId', 'type': 'str'},
         'data_flow': {'key': 'dataFlow', 'type': 'DataFlowDebugResource'},
+        'data_flows': {'key': 'dataFlows', 'type': '[DataFlowDebugResource]'},
         'datasets': {'key': 'datasets', 'type': '[DatasetDebugResource]'},
         'linked_services': {'key': 'linkedServices', 'type': '[LinkedServiceDebugResource]'},
         'staging': {'key': 'staging', 'type': 'DataFlowStagingInfo'},
@@ -11218,6 +11221,7 @@ class DataFlowDebugPackage(msrest.serialization.Model):
         self.additional_properties = kwargs.get('additional_properties', None)
         self.session_id = kwargs.get('session_id', None)
         self.data_flow = kwargs.get('data_flow', None)
+        self.data_flows = kwargs.get('data_flows', None)
         self.datasets = kwargs.get('datasets', None)
         self.linked_services = kwargs.get('linked_services', None)
         self.staging = kwargs.get('staging', None)
@@ -11496,6 +11500,8 @@ class Transformation(msrest.serialization.Model):
     :type name: str
     :param description: Transformation description.
     :type description: str
+    :param flowlet: Flowlet Reference.
+    :type flowlet: ~azure.mgmt.datafactory.models.DataFlowReference
     """
 
     _validation = {
@@ -11505,6 +11511,7 @@ class Transformation(msrest.serialization.Model):
     _attribute_map = {
         'name': {'key': 'name', 'type': 'str'},
         'description': {'key': 'description', 'type': 'str'},
+        'flowlet': {'key': 'flowlet', 'type': 'DataFlowReference'},
     }
 
     def __init__(
@@ -11514,6 +11521,7 @@ class Transformation(msrest.serialization.Model):
         super(Transformation, self).__init__(**kwargs)
         self.name = kwargs['name']
         self.description = kwargs.get('description', None)
+        self.flowlet = kwargs.get('flowlet', None)
 
 
 class DataFlowSink(Transformation):
@@ -11525,6 +11533,8 @@ class DataFlowSink(Transformation):
     :type name: str
     :param description: Transformation description.
     :type description: str
+    :param flowlet: Flowlet Reference.
+    :type flowlet: ~azure.mgmt.datafactory.models.DataFlowReference
     :param dataset: Dataset reference.
     :type dataset: ~azure.mgmt.datafactory.models.DatasetReference
     :param linked_service: Linked service reference.
@@ -11540,6 +11550,7 @@ class DataFlowSink(Transformation):
     _attribute_map = {
         'name': {'key': 'name', 'type': 'str'},
         'description': {'key': 'description', 'type': 'str'},
+        'flowlet': {'key': 'flowlet', 'type': 'DataFlowReference'},
         'dataset': {'key': 'dataset', 'type': 'DatasetReference'},
         'linked_service': {'key': 'linkedService', 'type': 'LinkedServiceReference'},
         'schema_linked_service': {'key': 'schemaLinkedService', 'type': 'LinkedServiceReference'},
@@ -11564,6 +11575,8 @@ class DataFlowSource(Transformation):
     :type name: str
     :param description: Transformation description.
     :type description: str
+    :param flowlet: Flowlet Reference.
+    :type flowlet: ~azure.mgmt.datafactory.models.DataFlowReference
     :param dataset: Dataset reference.
     :type dataset: ~azure.mgmt.datafactory.models.DatasetReference
     :param linked_service: Linked service reference.
@@ -11579,6 +11592,7 @@ class DataFlowSource(Transformation):
     _attribute_map = {
         'name': {'key': 'name', 'type': 'str'},
         'description': {'key': 'description', 'type': 'str'},
+        'flowlet': {'key': 'flowlet', 'type': 'DataFlowReference'},
         'dataset': {'key': 'dataset', 'type': 'DatasetReference'},
         'linked_service': {'key': 'linkedService', 'type': 'LinkedServiceReference'},
         'schema_linked_service': {'key': 'schemaLinkedService', 'type': 'LinkedServiceReference'},
@@ -16007,6 +16021,70 @@ class FilterActivity(ControlActivity):
         self.type = 'Filter'  # type: str
         self.items = kwargs['items']
         self.condition = kwargs['condition']
+
+
+class Flowlet(DataFlow):
+    """Data flow flowlet.
+
+    All required parameters must be populated in order to send to Azure.
+
+    :param type: Required. Type of data flow.Constant filled by server.
+    :type type: str
+    :param description: The description of the data flow.
+    :type description: str
+    :param annotations: List of tags that can be used for describing the data flow.
+    :type annotations: list[any]
+    :param folder: The folder that this data flow is in. If not specified, Data flow will appear at
+     the root level.
+    :type folder: ~azure.mgmt.datafactory.models.DataFlowFolder
+    :param additional_properties: Unmatched properties from the message are deserialized to this
+     collection.
+    :type additional_properties: dict[str, any]
+    :param sources: List of sources in Flowlet.
+    :type sources: list[~azure.mgmt.datafactory.models.DataFlowSource]
+    :param sinks: List of sinks in Flowlet.
+    :type sinks: list[~azure.mgmt.datafactory.models.DataFlowSink]
+    :param transformations: List of transformations in Flowlet.
+    :type transformations: list[~azure.mgmt.datafactory.models.Transformation]
+    :param script: Flowlet script.
+    :type script: str
+    :param script_lines: Flowlet script lines.
+    :type script_lines: list[str]
+    :param additional_properties1: Any object.
+    :type additional_properties1: any
+    """
+
+    _validation = {
+        'type': {'required': True},
+    }
+
+    _attribute_map = {
+        'type': {'key': 'type', 'type': 'str'},
+        'description': {'key': 'description', 'type': 'str'},
+        'annotations': {'key': 'annotations', 'type': '[object]'},
+        'folder': {'key': 'folder', 'type': 'DataFlowFolder'},
+        'additional_properties': {'key': '', 'type': '{object}'},
+        'sources': {'key': 'typeProperties.sources', 'type': '[DataFlowSource]'},
+        'sinks': {'key': 'typeProperties.sinks', 'type': '[DataFlowSink]'},
+        'transformations': {'key': 'typeProperties.transformations', 'type': '[Transformation]'},
+        'script': {'key': 'typeProperties.script', 'type': 'str'},
+        'script_lines': {'key': 'typeProperties.scriptLines', 'type': '[str]'},
+        'additional_properties1': {'key': 'typeProperties.additionalProperties', 'type': 'object'},
+    }
+
+    def __init__(
+        self,
+        **kwargs
+    ):
+        super(Flowlet, self).__init__(**kwargs)
+        self.type = 'Flowlet'  # type: str
+        self.additional_properties = kwargs.get('additional_properties', None)
+        self.sources = kwargs.get('sources', None)
+        self.sinks = kwargs.get('sinks', None)
+        self.transformations = kwargs.get('transformations', None)
+        self.script = kwargs.get('script', None)
+        self.script_lines = kwargs.get('script_lines', None)
+        self.additional_properties1 = kwargs.get('additional_properties1', None)
 
 
 class ForEachActivity(ControlActivity):
@@ -22502,6 +22580,8 @@ class MappingDataFlow(DataFlow):
     :type transformations: list[~azure.mgmt.datafactory.models.Transformation]
     :param script: DataFlow script.
     :type script: str
+    :param script_lines: Data flow script lines.
+    :type script_lines: list[str]
     """
 
     _validation = {
@@ -22517,6 +22597,7 @@ class MappingDataFlow(DataFlow):
         'sinks': {'key': 'typeProperties.sinks', 'type': '[DataFlowSink]'},
         'transformations': {'key': 'typeProperties.transformations', 'type': '[Transformation]'},
         'script': {'key': 'typeProperties.script', 'type': 'str'},
+        'script_lines': {'key': 'typeProperties.scriptLines', 'type': '[str]'},
     }
 
     def __init__(
@@ -22529,6 +22610,7 @@ class MappingDataFlow(DataFlow):
         self.sinks = kwargs.get('sinks', None)
         self.transformations = kwargs.get('transformations', None)
         self.script = kwargs.get('script', None)
+        self.script_lines = kwargs.get('script_lines', None)
 
 
 class MariaDBLinkedService(LinkedService):
@@ -27506,6 +27588,8 @@ class PowerQuerySink(DataFlowSink):
     :type name: str
     :param description: Transformation description.
     :type description: str
+    :param flowlet: Flowlet Reference.
+    :type flowlet: ~azure.mgmt.datafactory.models.DataFlowReference
     :param dataset: Dataset reference.
     :type dataset: ~azure.mgmt.datafactory.models.DatasetReference
     :param linked_service: Linked service reference.
@@ -27523,6 +27607,7 @@ class PowerQuerySink(DataFlowSink):
     _attribute_map = {
         'name': {'key': 'name', 'type': 'str'},
         'description': {'key': 'description', 'type': 'str'},
+        'flowlet': {'key': 'flowlet', 'type': 'DataFlowReference'},
         'dataset': {'key': 'dataset', 'type': 'DatasetReference'},
         'linked_service': {'key': 'linkedService', 'type': 'LinkedServiceReference'},
         'schema_linked_service': {'key': 'schemaLinkedService', 'type': 'LinkedServiceReference'},
@@ -27569,6 +27654,8 @@ class PowerQuerySource(DataFlowSource):
     :type name: str
     :param description: Transformation description.
     :type description: str
+    :param flowlet: Flowlet Reference.
+    :type flowlet: ~azure.mgmt.datafactory.models.DataFlowReference
     :param dataset: Dataset reference.
     :type dataset: ~azure.mgmt.datafactory.models.DatasetReference
     :param linked_service: Linked service reference.
@@ -27586,6 +27673,7 @@ class PowerQuerySource(DataFlowSource):
     _attribute_map = {
         'name': {'key': 'name', 'type': 'str'},
         'description': {'key': 'description', 'type': 'str'},
+        'flowlet': {'key': 'flowlet', 'type': 'DataFlowReference'},
         'dataset': {'key': 'dataset', 'type': 'DatasetReference'},
         'linked_service': {'key': 'linkedService', 'type': 'LinkedServiceReference'},
         'schema_linked_service': {'key': 'schemaLinkedService', 'type': 'LinkedServiceReference'},
