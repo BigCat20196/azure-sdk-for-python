@@ -8198,7 +8198,7 @@ class BlobEventsTrigger(MultiplePipelineTrigger):
     :param ignore_empty_blobs: If set to true, blobs with zero bytes will be ignored.
     :type ignore_empty_blobs: bool
     :param events: Required. The type of events that cause this trigger to fire.
-    :type events: list[str or ~azure.mgmt.datafactory.models.BlobEventTypes]
+    :type events: list[str or ~azure.mgmt.datafactory.models.BlobEventType]
     :param scope: Required. The ARM resource ID of the Storage Account.
     :type scope: str
     """

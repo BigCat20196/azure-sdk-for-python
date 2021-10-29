@@ -9422,7 +9422,7 @@ class BlobEventsTrigger(MultiplePipelineTrigger):
     :param ignore_empty_blobs: If set to true, blobs with zero bytes will be ignored.
     :type ignore_empty_blobs: bool
     :param events: Required. The type of events that cause this trigger to fire.
-    :type events: list[str or ~azure.mgmt.datafactory.models.BlobEventTypes]
+    :type events: list[str or ~azure.mgmt.datafactory.models.BlobEventType]
     :param scope: Required. The ARM resource ID of the Storage Account.
     :type scope: str
     """
@@ -9451,7 +9451,7 @@ class BlobEventsTrigger(MultiplePipelineTrigger):
     def __init__(
         self,
         *,
-        events: List[Union[str, "BlobEventTypes"]],
+        events: List[Union[str, "BlobEventType"]],
         scope: str,
         additional_properties: Optional[Dict[str, Any]] = None,
         description: Optional[str] = None,
