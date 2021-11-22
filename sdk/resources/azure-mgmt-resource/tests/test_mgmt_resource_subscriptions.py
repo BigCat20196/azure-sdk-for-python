@@ -16,7 +16,7 @@ from devtools_testutils import AzureMgmtRecordedTestCase, recorded_by_proxy
 
 class TestMgmtResourceSubscriptions(AzureMgmtRecordedTestCase):
 
-    def setup_method(self, method):
+    def setup(self):
         self.subscriptions_client = self.create_mgmt_client(azure.mgmt.resource.SubscriptionClient)
 
     @recorded_by_proxy

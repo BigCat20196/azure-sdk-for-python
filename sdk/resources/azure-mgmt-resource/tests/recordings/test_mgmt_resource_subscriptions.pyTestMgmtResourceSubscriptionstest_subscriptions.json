@@ -7,7 +7,7 @@
         "Accept": "*/*",
         "Accept-Encoding": "gzip, deflate",
         "Connection": "keep-alive",
-        "User-Agent": "azsdk-python-identity/1.7.2 Python/3.10.0 (Windows-10-10.0.22000-SP0)"
+        "User-Agent": "azsdk-python-identity/1.7.1 Python/3.8.8 (Windows-10-10.0.19041-SP0)"
       },
       "RequestBody": null,
       "StatusCode": 200,
@@ -17,18 +17,18 @@
         "Cache-Control": "max-age=86400, private",
         "Content-Length": "1753",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Sat, 13 Nov 2021 00:47:28 GMT",
+        "Date": "Thu, 18 Nov 2021 01:47:05 GMT",
         "P3P": "CP=\u0022DSP CUR OTPi IND OTRi ONL FIN\u0022",
         "Set-Cookie": [
-          "fpc=AkuCBEH2L8JEkezivtXdaPA; expires=Mon, 13-Dec-2021 00:47:28 GMT; path=/; secure; HttpOnly; SameSite=None",
-          "esctx=AQABAAAAAAD--DLA3VO7QrddgJg7WevrPBHNREtCH0qNBrTgWujyEcoY2fvRdEUJnEMGLue9FeGDaOnrHyle-nkHmmJ7d0NUJQvV4PXQxCtSuleDkGsg2dFf0EFN0XXBlRrfEgO4quV2cJXQedNrNK9wnqhquEQjsMGE8_g6IQ90urpe79jn8SbYz3qYEcd02ZqtkoFJ97ggAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly; SameSite=None",
+          "fpc=An-xvcCSqVtPuj-ivNhDU50; expires=Sat, 18-Dec-2021 01:47:06 GMT; path=/; secure; HttpOnly; SameSite=None",
+          "esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr2EBP91Ml2BY6yb_g9z2uf5FOxL3exYpgkN9a2VO036UqXliV3V5B9mFCCjGF11T_z5zp0-FK-xPcMOZ7E7ttc9TmggDWwN3j5z2xaRgC-mCg2wwY1Gq5MkcS8ewGNYJMsulEMppTdKwH1SoKkOJFc_me-BNHXzC1hOeiA_E_ijkgAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly; SameSite=None",
           "x-ms-gateway-slice=estsfd; path=/; secure; samesite=none; httponly",
           "stsservicecookie=estsfd; path=/; secure; samesite=none; httponly"
         ],
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-ests-server": "2.1.12249.9 - WUS2 ProdSlices",
-        "x-ms-request-id": "87f8fe19-1bc9-4eec-8a1d-5ff1c6e90600"
+        "x-ms-ests-server": "2.1.12231.7 - SCUS ProdSlices",
+        "x-ms-request-id": "1bcf758c-bc76-4eb7-94f9-b778c360ea00"
       },
       "ResponseBody": {
         "token_endpoint": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/oauth2/v2.0/token",
@@ -91,7 +91,7 @@
           "email"
         ],
         "kerberos_endpoint": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/kerberos",
-        "tenant_region_scope": "WW",
+        "tenant_region_scope": "NA",
         "cloud_instance_name": "microsoftonline.com",
         "cloud_graph_host_name": "graph.windows.net",
         "msgraph_host": "graph.microsoft.com",
@@ -105,8 +105,8 @@
         "Accept": "application/json",
         "Accept-Encoding": "gzip, deflate",
         "Connection": "keep-alive",
-        "Cookie": "fpc=AkuCBEH2L8JEkezivtXdaPA; stsservicecookie=estsfd; x-ms-gateway-slice=estsfd",
-        "User-Agent": "azsdk-python-identity/1.7.2 Python/3.10.0 (Windows-10-10.0.22000-SP0)"
+        "Cookie": "fpc=An-xvcCSqVtPuj-ivNhDU50; stsservicecookie=estsfd; x-ms-gateway-slice=estsfd",
+        "User-Agent": "azsdk-python-identity/1.7.1 Python/3.8.8 (Windows-10-10.0.19041-SP0)"
       },
       "RequestBody": null,
       "StatusCode": 200,
@@ -116,17 +116,17 @@
         "Cache-Control": "max-age=86400, private",
         "Content-Length": "945",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Sat, 13 Nov 2021 00:47:28 GMT",
+        "Date": "Thu, 18 Nov 2021 01:47:05 GMT",
         "P3P": "CP=\u0022DSP CUR OTPi IND OTRi ONL FIN\u0022",
         "Set-Cookie": [
-          "fpc=AkuCBEH2L8JEkezivtXdaPA; expires=Mon, 13-Dec-2021 00:47:28 GMT; path=/; secure; HttpOnly; SameSite=None",
+          "fpc=An-xvcCSqVtPuj-ivNhDU50; expires=Sat, 18-Dec-2021 01:47:06 GMT; path=/; secure; HttpOnly; SameSite=None",
           "x-ms-gateway-slice=estsfd; path=/; secure; samesite=none; httponly",
           "stsservicecookie=estsfd; path=/; secure; samesite=none; httponly"
         ],
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-ests-server": "2.1.12197.4 - NCUS ProdSlices",
-        "x-ms-request-id": "a71dea95-9f39-4a56-8c04-81787d432c00"
+        "x-ms-ests-server": "2.1.12231.8 - KRSLR1 ProdSlices",
+        "x-ms-request-id": "f782a00c-5a9b-4df5-b1e3-daedd7e40100"
       },
       "ResponseBody": {
         "tenant_discovery_endpoint": "https://login.microsoftonline.com/common/.well-known/openid-configuration",
@@ -181,47 +181,47 @@
       "RequestHeaders": {
         "Accept": "application/json",
         "Accept-Encoding": "gzip, deflate",
-        "client-request-id": "443d2e04-a7f1-4feb-a2bc-9a1888759d06",
+        "client-request-id": "5347ab11-7fb4-429b-9887-ad8d36a56644",
         "Connection": "keep-alive",
         "Content-Length": "286",
         "Content-Type": "application/x-www-form-urlencoded",
-        "Cookie": "fpc=AkuCBEH2L8JEkezivtXdaPA; stsservicecookie=estsfd; x-ms-gateway-slice=estsfd",
-        "User-Agent": "azsdk-python-identity/1.7.2 Python/3.10.0 (Windows-10-10.0.22000-SP0)",
+        "Cookie": "fpc=An-xvcCSqVtPuj-ivNhDU50; stsservicecookie=estsfd; x-ms-gateway-slice=estsfd",
+        "User-Agent": "azsdk-python-identity/1.7.1 Python/3.8.8 (Windows-10-10.0.19041-SP0)",
         "x-client-cpu": "x64",
         "x-client-current-telemetry": "4|730,0|",
         "x-client-last-telemetry": "4|0|||",
         "x-client-os": "win32",
         "x-client-sku": "MSAL.Python",
-        "x-client-ver": "1.15.0",
+        "x-client-ver": "1.16.0",
         "x-ms-lib-capability": "retry-after, h429"
       },
-      "RequestBody": "client_id=c51fbd7b-3a8a-4043-b5e1-b4631b45fdbb\u0026grant_type=client_credentials\u0026client_info=1\u0026client_secret=OqR445KX.Mj-I70qnfGeYHPsFi.vDjh7~Z\u0026claims=%7B%22access_token%22%3A\u002B%7B%22xms_cc%22%3A\u002B%7B%22values%22%3A\u002B%5B%22CP1%22%5D%7D%7D%7D\u0026scope=https%3A%2F%2Fmanagement.azure.com%2F.default",
+      "RequestBody": "client_id=8c41a920-007a-4844-a189-2d0efe39f51e\u0026grant_type=client_credentials\u0026client_info=1\u0026client_secret=o0XWF_siD-FhI.5AE83-u0GaQHW_GP7cjy\u0026claims=%7B%22access_token%22%3A\u002B%7B%22xms_cc%22%3A\u002B%7B%22values%22%3A\u002B%5B%22CP1%22%5D%7D%7D%7D\u0026scope=https%3A%2F%2Fmanagement.azure.com%2F.default",
       "StatusCode": 200,
       "ResponseHeaders": {
         "Cache-Control": "no-store, no-cache",
-        "client-request-id": "443d2e04-a7f1-4feb-a2bc-9a1888759d06",
-        "Content-Length": "1374",
+        "client-request-id": "5347ab11-7fb4-429b-9887-ad8d36a56644",
+        "Content-Length": "1349",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Sat, 13 Nov 2021 00:47:28 GMT",
+        "Date": "Thu, 18 Nov 2021 01:47:06 GMT",
         "Expires": "-1",
         "P3P": "CP=\u0022DSP CUR OTPi IND OTRi ONL FIN\u0022",
         "Pragma": "no-cache",
         "Set-Cookie": [
-          "fpc=AkuCBEH2L8JEkezivtXdaPD0Kwy2AQAAACACIdkOAAAA; expires=Mon, 13-Dec-2021 00:47:28 GMT; path=/; secure; HttpOnly; SameSite=None",
+          "fpc=An-xvcCSqVtPuj-ivNhDU53mIjFAAQAAAJqnJ9kOAAAA; expires=Sat, 18-Dec-2021 01:47:06 GMT; path=/; secure; HttpOnly; SameSite=None",
           "x-ms-gateway-slice=estsfd; path=/; secure; samesite=none; httponly",
           "stsservicecookie=estsfd; path=/; secure; samesite=none; httponly"
         ],
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "X-Content-Type-Options": "nosniff",
         "x-ms-clitelem": "1,0,0,,",
-        "x-ms-ests-server": "2.1.12249.9 - WUS2 ProdSlices",
-        "x-ms-request-id": "87f8fe19-1bc9-4eec-8a1d-5ff1cfe90600"
+        "x-ms-ests-server": "2.1.12231.7 - NCUS ProdSlices",
+        "x-ms-request-id": "ca535ac0-dd2e-4a3e-bfad-b72da2461301"
       },
       "ResponseBody": {
         "token_type": "Bearer",
-        "expires_in": 86399,
-        "ext_expires_in": 86399,
-        "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlhdCI6MTYzNjc2NDE0OCwibmJmIjoxNjM2NzY0MTQ4LCJleHAiOjE2MzY4NTA4NDgsImFpbyI6IkUyWmdZTkJyZTc3MUFIT3U1TmxVMVZnUi9ldGNBQT09IiwiYXBwaWQiOiJjNTFmYmQ3Yi0zYThhLTQwNDMtYjVlMS1iNDYzMWI0NWZkYmIiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83MmY5ODhiZi04NmYxLTQxYWYtOTFhYi0yZDdjZDAxMWRiNDcvIiwib2lkIjoiNWVlOGZkMDQtMTg5MC00ZmU0LWJjMGYtZWUwMDY2MWE5MDc2IiwicmgiOiIwLkFRRUF2NGo1Y3ZHR3IwR1JxeTE4MEJIYlIzdTlIOFdLT2tOQXRlRzBZeHRGX2JzYUFBQS4iLCJzdWIiOiI1ZWU4ZmQwNC0xODkwLTRmZTQtYmMwZi1lZTAwNjYxYTkwNzYiLCJ0aWQiOiI3MmY5ODhiZi04NmYxLTQxYWYtOTFhYi0yZDdjZDAxMWRiNDciLCJ1dGkiOiJHZjc0aDhrYjdFNktIVl94ei1rR0FBIiwidmVyIjoiMS4wIiwieG1zX2NjIjpbIkNQMSJdLCJ4bXNfdGNkdCI6MTI4OTI0MTU0N30.Q_STTv-tKK5OSBnjEswBh3AO-NF4Ba6ZKFckFuvJvwEZYgFXG0SQN2f1E3oIWEyU-UEpfOTxxLSELybzYF0dqQFm8FGYGr_lsEabHeVkxd2j2cUnGLVDOFPhJ6lCX8PcmxLbCw_t1BMMLSiG3Aefne0e5cx_s2aM9f3diMlPLuE9bs_YSnkL4rItRX45ftfCjTfgjCihwU7EGQsqXp5DHjsLOFt8vCeI8BGTk9FKVIkuUbptFAK15QLxMDBfDK6bJ78tbQAB6kifUiHYWONJf3T6uakWK4Y6osS7fgYP9rhDv70syELH7v49T2HcbHMGWIy8x8VY9BHGShvOIQohTw"
+        "expires_in": 3599,
+        "ext_expires_in": 3599,
+        "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNTQ4MjZiMjItMzhkNi00ZmIyLWJhZDktYjdiOTNhM2U5YzVhLyIsImlhdCI6MTYzNzE5OTcyNiwibmJmIjoxNjM3MTk5NzI2LCJleHAiOjE2MzcyMDM2MjYsImFpbyI6IkUyWmdZSGpYeUhNN2NObnlWLytuK1ZuOVRmSHNBd0E9IiwiYXBwaWQiOiI4YzQxYTkyMC0wMDdhLTQ4NDQtYTE4OS0yZDBlZmUzOWY1MWUiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81NDgyNmIyMi0zOGQ2LTRmYjItYmFkOS1iN2I5M2EzZTljNWEvIiwib2lkIjoiMjI5YmVmMDAtNjUzNi00YjZhLTgyZDAtZWM4M2JmMWNkYTdlIiwicmgiOiIwLkFUY0FJbXVDVk5ZNHNrLTYyYmU1T2o2Y1dpQ3BRWXg2QUVSSW9Za3REdjQ1OVI0M0FBQS4iLCJzdWIiOiIyMjliZWYwMC02NTM2LTRiNmEtODJkMC1lYzgzYmYxY2RhN2UiLCJ0aWQiOiI1NDgyNmIyMi0zOGQ2LTRmYjItYmFkOS1iN2I5M2EzZTljNWEiLCJ1dGkiOiJ3RnBUeWk3ZFBrcV9yYmN0b2tZVEFRIiwidmVyIjoiMS4wIiwieG1zX3RjZHQiOjE0MTIyMDY4NDB9.FmORrNSXKQP6D1wizH2WNJtk8OfdRJ_l5KaCSb3KL1kPtS5LT5fwqqcZK6zsdmfgyS9GNYXnTtWDni2yKJx9mgtKWZdd3ZnlbmzN1xjovPg_LpY41jE465anIxbxJNPHFsMBNAqUuSbjM3AAfFx-ULwYjj9_b5mTfx_4N9CYB4m9SWe0TwU0kh9ToRRwyMALTWEmS4KuczjLdYK8IjUmaFUDQFCRJ5vPANSNtL158qxL5tSuMAEBGVTKwZd9F5JHtXzbR0ndt2i7D_auMnQn6fKYIVgVnfLCTfSqjoM3zcIuXyqWRZv_DuFCvHibp8pIbdS7NAC0KBBRKoGryfl-6g"
       }
     },
     {
@@ -232,26 +232,26 @@
         "Accept-Encoding": "gzip, deflate",
         "Authorization": "Sanitized",
         "Connection": "keep-alive",
-        "User-Agent": "azsdk-python-azure-mgmt-resource/20.0.0 Python/3.10.0 (Windows-10-10.0.22000-SP0)",
-        "x-ms-client-request-id": "4652e2d5-441b-11ec-9e9c-c8348e51ab51"
+        "User-Agent": "azsdk-python-azure-mgmt-resource/20.0.0 Python/3.8.8 (Windows-10-10.0.19041-SP0)",
+        "x-ms-client-request-id": "6e2353be-4811-11ec-940d-70b5e82527ff"
       },
       "RequestBody": null,
       "StatusCode": 200,
       "ResponseHeaders": {
         "Cache-Control": "no-cache",
         "Content-Encoding": "gzip",
-        "Content-Length": "518",
+        "Content-Length": "500",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Sat, 13 Nov 2021 00:47:28 GMT",
+        "Date": "Thu, 18 Nov 2021 01:47:08 GMT",
         "Expires": "-1",
         "Pragma": "no-cache",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "Vary": "Accept-Encoding",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-correlation-request-id": "2e57a276-046d-4d54-8bd5-f6f044ef5530",
+        "x-ms-correlation-request-id": "d887fb4d-830b-4042-b846-cf44cb54c7cd",
         "x-ms-ratelimit-remaining-tenant-reads": "11999",
-        "x-ms-request-id": "2e57a276-046d-4d54-8bd5-f6f044ef5530",
-        "x-ms-routing-request-id": "WESTUS2:20211113T004728Z:2e57a276-046d-4d54-8bd5-f6f044ef5530"
+        "x-ms-request-id": "d887fb4d-830b-4042-b846-cf44cb54c7cd",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20211118T014708Z:d887fb4d-830b-4042-b846-cf44cb54c7cd"
       },
       "ResponseBody": {
         "value": [
@@ -266,7 +266,7 @@
             "tags": {},
             "subscriptionId": "00000000-0000-0000-0000-000000000000",
             "tenantId": "00000000-0000-0000-0000-000000000000",
-            "displayName": "Azure SDK Developer Playground",
+            "displayName": "AzureSDKTest",
             "state": "Enabled",
             "subscriptionPolicies": {
               "locationPlacementId": "Internal_2014-09-01",
@@ -289,26 +289,26 @@
         "Accept-Encoding": "gzip, deflate",
         "Authorization": "Sanitized",
         "Connection": "keep-alive",
-        "User-Agent": "azsdk-python-azure-mgmt-resource/20.0.0 Python/3.10.0 (Windows-10-10.0.22000-SP0)",
-        "x-ms-client-request-id": "47091580-441b-11ec-8078-c8348e51ab51"
+        "User-Agent": "azsdk-python-azure-mgmt-resource/20.0.0 Python/3.8.8 (Windows-10-10.0.19041-SP0)",
+        "x-ms-client-request-id": "70c24c7c-4811-11ec-afda-70b5e82527ff"
       },
       "RequestBody": null,
       "StatusCode": 200,
       "ResponseHeaders": {
         "Cache-Control": "no-cache",
         "Content-Encoding": "gzip",
-        "Content-Length": "29714",
+        "Content-Length": "31158",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Sat, 13 Nov 2021 00:47:29 GMT",
+        "Date": "Thu, 18 Nov 2021 01:47:09 GMT",
         "Expires": "-1",
         "Pragma": "no-cache",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "Vary": "Accept-Encoding",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-correlation-request-id": "528ae5a5-e386-4e83-bbbe-de1faf14f72d",
+        "x-ms-correlation-request-id": "75614056-77b5-4d86-aaed-aa24d4109b5d",
         "x-ms-ratelimit-remaining-subscription-reads": "11999",
-        "x-ms-request-id": "528ae5a5-e386-4e83-bbbe-de1faf14f72d",
-        "x-ms-routing-request-id": "WESTUS2:20211113T004730Z:528ae5a5-e386-4e83-bbbe-de1faf14f72d"
+        "x-ms-request-id": "75614056-77b5-4d86-aaed-aa24d4109b5d",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20211118T014710Z:75614056-77b5-4d86-aaed-aa24d4109b5d"
       },
       "ResponseBody": {
         "value": [
@@ -1520,6 +1520,27 @@
             }
           },
           {
+            "id": "/subscriptions/00000000-0000-0000-0000-000000000000/locations/swedensouth",
+            "name": "swedensouth",
+            "type": "Region",
+            "displayName": "Sweden South",
+            "regionalDisplayName": "(Europe) Sweden South",
+            "metadata": {
+              "regionType": "Physical",
+              "regionCategory": "Other",
+              "geographyGroup": "Europe",
+              "longitude": "13.0007",
+              "latitude": "55.6059",
+              "physicalLocation": "Malmo",
+              "pairedRegion": [
+                {
+                  "name": "swedencentral",
+                  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/locations/swedencentral"
+                }
+              ]
+            }
+          },
+          {
             "id": "/subscriptions/00000000-0000-0000-0000-000000000000/locations/switzerlandwest",
             "name": "switzerlandwest",
             "type": "Region",
@@ -1602,6 +1623,48 @@
                 }
               ]
             }
+          },
+          {
+            "id": "/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastusslv",
+            "name": "eastusslv",
+            "type": "Region",
+            "displayName": "East US SLV",
+            "regionalDisplayName": "(South America) East US SLV",
+            "metadata": {
+              "regionType": "Physical",
+              "regionCategory": "Other",
+              "geographyGroup": "South America",
+              "longitude": "-43.2075",
+              "latitude": "-22.90278",
+              "physicalLocation": "Silverstone",
+              "pairedRegion": [
+                {
+                  "name": "eastusslv",
+                  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/locations/eastusslv"
+                }
+              ]
+            }
+          },
+          {
+            "id": "/subscriptions/00000000-0000-0000-0000-000000000000/locations/qatarcentral",
+            "name": "qatarcentral",
+            "type": "Region",
+            "displayName": "Qatar Central",
+            "regionalDisplayName": "(Europe) Qatar Central",
+            "metadata": {
+              "regionType": "Physical",
+              "regionCategory": "Other",
+              "geographyGroup": "Europe",
+              "longitude": "51.439327",
+              "latitude": "25.551462",
+              "physicalLocation": "Doha",
+              "pairedRegion": [
+                {
+                  "name": "westeurope",
+                  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/locations/westeurope"
+                }
+              ]
+            }
           }
         ]
       }
@@ -1614,26 +1677,26 @@
         "Accept-Encoding": "gzip, deflate",
         "Authorization": "Sanitized",
         "Connection": "keep-alive",
-        "User-Agent": "azsdk-python-azure-mgmt-resource/20.0.0 Python/3.10.0 (Windows-10-10.0.22000-SP0)",
-        "x-ms-client-request-id": "47b8b18e-441b-11ec-956d-c8348e51ab51"
+        "User-Agent": "azsdk-python-azure-mgmt-resource/20.0.0 Python/3.8.8 (Windows-10-10.0.19041-SP0)",
+        "x-ms-client-request-id": "718dd4e3-4811-11ec-8d2a-70b5e82527ff"
       },
       "RequestBody": null,
       "StatusCode": 200,
       "ResponseHeaders": {
         "Cache-Control": "no-cache",
         "Content-Encoding": "gzip",
-        "Content-Length": "471",
+        "Content-Length": "453",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Sat, 13 Nov 2021 00:47:29 GMT",
+        "Date": "Thu, 18 Nov 2021 01:47:10 GMT",
         "Expires": "-1",
         "Pragma": "no-cache",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "Vary": "Accept-Encoding",
         "X-Content-Type-Options": "nosniff",
-        "x-ms-correlation-request-id": "ae80a530-7a3e-463d-abfd-0cb27100f978",
+        "x-ms-correlation-request-id": "7b531f76-956f-485d-b7e6-8173547eb9d3",
         "x-ms-ratelimit-remaining-subscription-reads": "11998",
-        "x-ms-request-id": "ae80a530-7a3e-463d-abfd-0cb27100f978",
-        "x-ms-routing-request-id": "WESTUS2:20211113T004730Z:ae80a530-7a3e-463d-abfd-0cb27100f978"
+        "x-ms-request-id": "7b531f76-956f-485d-b7e6-8173547eb9d3",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20211118T014710Z:7b531f76-956f-485d-b7e6-8173547eb9d3"
       },
       "ResponseBody": {
         "id": "/subscriptions/00000000-0000-0000-0000-000000000000",
@@ -1646,7 +1709,7 @@
         "tags": {},
         "subscriptionId": "00000000-0000-0000-0000-000000000000",
         "tenantId": "00000000-0000-0000-0000-000000000000",
-        "displayName": "Azure SDK Developer Playground",
+        "displayName": "AzureSDKTest",
         "state": "Enabled",
         "subscriptionPolicies": {
           "locationPlacementId": "Internal_2014-09-01",
