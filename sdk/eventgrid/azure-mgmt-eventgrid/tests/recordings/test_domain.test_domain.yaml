@@ -21,7 +21,7 @@ interactions:
       string: '{"properties":{"provisioningState":"Creating","endpoint":null},"location":"eastus2euap","tags":null,"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
     headers:
       azure-asyncoperation:
-      - https://management.azure.com:443/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/E1494F88-F72F-4C15-BB6D-851719C75927?api-version=2021-12-01
+      - https://management.azure.com:443/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/531ACFBB-21EA-4E55-90F4-EA66EF58F2AD?api-version=2021-12-01
       cache-control:
       - no-cache
       content-length:
@@ -29,7 +29,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 05 Nov 2021 06:33:46 GMT
+      - Fri, 19 Nov 2021 08:08:08 GMT
       expires:
       - '-1'
       pragma:
@@ -41,7 +41,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1198'
+      - '1199'
     status:
       code: 201
       message: Created
@@ -57,10 +57,10 @@ interactions:
       User-Agent:
       - azsdk-python-mgmt-eventgrid/10.0.0 Python/3.6.9 (Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-Ubuntu-18.04-bionic)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/E1494F88-F72F-4C15-BB6D-851719C75927?api-version=2021-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/531ACFBB-21EA-4E55-90F4-EA66EF58F2AD?api-version=2021-12-01
   response:
     body:
-      string: '{"id":"https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/E1494F88-F72F-4C15-BB6D-851719C75927?api-version=2021-12-01","name":"e1494f88-f72f-4c15-bb6d-851719c75927","status":"Succeeded"}'
+      string: '{"id":"https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/531ACFBB-21EA-4E55-90F4-EA66EF58F2AD?api-version=2021-12-01","name":"531acfbb-21ea-4e55-90f4-ea66ef58f2ad","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
@@ -69,7 +69,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 05 Nov 2021 06:33:57 GMT
+      - Fri, 19 Nov 2021 08:08:18 GMT
       expires:
       - '-1'
       pragma:
@@ -102,7 +102,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d?api-version=2021-12-01
   response:
     body:
-      string: '{"properties":{"provisioningState":"Succeeded","endpoint":"https://domain70eb095d.eastus2euap-1.eventgrid.azure.net/api/events","inputSchema":"EventGridSchema","metricResourceId":"7cd50d1d-c7d6-4061-b6a5-594fed35abb7","publicNetworkAccess":"Enabled"},"location":"eastus2euap","tags":null,"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
+      string: '{"properties":{"provisioningState":"Succeeded","endpoint":"https://domain70eb095d.eastus2euap-1.eventgrid.azure.net/api/events","inputSchema":"EventGridSchema","metricResourceId":"5dd40fe5-d40c-4442-96a3-0cbf6ecec5ed","publicNetworkAccess":"Enabled"},"location":"eastus2euap","tags":null,"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
     headers:
       cache-control:
       - no-cache
@@ -111,7 +111,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 05 Nov 2021 06:33:57 GMT
+      - Fri, 19 Nov 2021 08:08:19 GMT
       expires:
       - '-1'
       pragma:
@@ -148,10 +148,10 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d?api-version=2021-12-01
   response:
     body:
-      string: '{"properties":{"provisioningState":"Updating","endpoint":"https://domain70eb095d.eastus2euap-1.eventgrid.azure.net/api/events","inputSchema":"EventGridSchema","metricResourceId":"7cd50d1d-c7d6-4061-b6a5-594fed35abb7","publicNetworkAccess":"Enabled"},"location":"eastus2euap","tags":{"tag1":"value1","tag2":"value2"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
+      string: '{"properties":{"provisioningState":"Updating","endpoint":"https://domain70eb095d.eastus2euap-1.eventgrid.azure.net/api/events","inputSchema":"EventGridSchema","metricResourceId":"5dd40fe5-d40c-4442-96a3-0cbf6ecec5ed","publicNetworkAccess":"Enabled"},"location":"eastus2euap","tags":{"tag1":"value1","tag2":"value2"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
     headers:
       azure-asyncoperation:
-      - https://management.azure.com:443/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/67211BD5-E97D-457F-A548-D3FCA3E877DB?api-version=2021-12-01
+      - https://management.azure.com:443/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/A3061826-D08A-4EC5-A3D8-064CF7F103E5?api-version=2021-12-01
       cache-control:
       - no-cache
       content-length:
@@ -159,7 +159,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 05 Nov 2021 06:34:01 GMT
+      - Fri, 19 Nov 2021 08:08:22 GMT
       expires:
       - '-1'
       pragma:
@@ -171,7 +171,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1197'
+      - '1198'
     status:
       code: 201
       message: Created
@@ -187,10 +187,10 @@ interactions:
       User-Agent:
       - azsdk-python-mgmt-eventgrid/10.0.0 Python/3.6.9 (Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-Ubuntu-18.04-bionic)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/67211BD5-E97D-457F-A548-D3FCA3E877DB?api-version=2021-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/A3061826-D08A-4EC5-A3D8-064CF7F103E5?api-version=2021-12-01
   response:
     body:
-      string: '{"id":"https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/67211BD5-E97D-457F-A548-D3FCA3E877DB?api-version=2021-12-01","name":"67211bd5-e97d-457f-a548-d3fca3e877db","status":"Succeeded"}'
+      string: '{"id":"https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/A3061826-D08A-4EC5-A3D8-064CF7F103E5?api-version=2021-12-01","name":"a3061826-d08a-4ec5-a3d8-064cf7f103e5","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
@@ -199,7 +199,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 05 Nov 2021 06:34:11 GMT
+      - Fri, 19 Nov 2021 08:08:33 GMT
       expires:
       - '-1'
       pragma:
@@ -232,7 +232,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d?api-version=2021-12-01
   response:
     body:
-      string: '{"properties":{"provisioningState":"Succeeded","endpoint":"https://domain70eb095d.eastus2euap-1.eventgrid.azure.net/api/events","inputSchema":"EventGridSchema","metricResourceId":"7cd50d1d-c7d6-4061-b6a5-594fed35abb7","publicNetworkAccess":"Enabled"},"location":"eastus2euap","tags":{"tag1":"value1","tag2":"value2"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
+      string: '{"properties":{"provisioningState":"Succeeded","endpoint":"https://domain70eb095d.eastus2euap-1.eventgrid.azure.net/api/events","inputSchema":"EventGridSchema","metricResourceId":"5dd40fe5-d40c-4442-96a3-0cbf6ecec5ed","publicNetworkAccess":"Enabled"},"location":"eastus2euap","tags":{"tag1":"value1","tag2":"value2"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
     headers:
       cache-control:
       - no-cache
@@ -241,7 +241,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 05 Nov 2021 06:34:12 GMT
+      - Fri, 19 Nov 2021 08:08:33 GMT
       expires:
       - '-1'
       pragma:
@@ -274,7 +274,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d?api-version=2021-12-01
   response:
     body:
-      string: '{"properties":{"provisioningState":"Succeeded","endpoint":"https://domain70eb095d.eastus2euap-1.eventgrid.azure.net/api/events","inputSchema":"EventGridSchema","metricResourceId":"7cd50d1d-c7d6-4061-b6a5-594fed35abb7","publicNetworkAccess":"Enabled"},"location":"eastus2euap","tags":{"tag1":"value1","tag2":"value2"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
+      string: '{"properties":{"provisioningState":"Succeeded","endpoint":"https://domain70eb095d.eastus2euap-1.eventgrid.azure.net/api/events","inputSchema":"EventGridSchema","metricResourceId":"5dd40fe5-d40c-4442-96a3-0cbf6ecec5ed","publicNetworkAccess":"Enabled"},"location":"eastus2euap","tags":{"tag1":"value1","tag2":"value2"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rgname/providers/Microsoft.EventGrid/domains/domain70eb095d","name":"domain70eb095d","type":"Microsoft.EventGrid/domains"}'
     headers:
       cache-control:
       - no-cache
@@ -283,7 +283,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 05 Nov 2021 06:34:12 GMT
+      - Fri, 19 Nov 2021 08:08:34 GMT
       expires:
       - '-1'
       pragma:
@@ -321,17 +321,17 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com:443/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/2A715E2F-13FA-42C5-8671-EE162FE2DBB1?api-version=2021-12-01
+      - https://management.azure.com:443/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/8DCFD7B5-6B0D-4008-BE71-4026CB0EE84D?api-version=2021-12-01
       cache-control:
       - no-cache
       content-length:
       - '0'
       date:
-      - Fri, 05 Nov 2021 06:34:13 GMT
+      - Fri, 19 Nov 2021 08:08:35 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationResults/2A715E2F-13FA-42C5-8671-EE162FE2DBB1?api-version=2021-12-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationResults/8DCFD7B5-6B0D-4008-BE71-4026CB0EE84D?api-version=2021-12-01
       pragma:
       - no-cache
       server:
@@ -357,10 +357,10 @@ interactions:
       User-Agent:
       - azsdk-python-mgmt-eventgrid/10.0.0 Python/3.6.9 (Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-Ubuntu-18.04-bionic)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/2A715E2F-13FA-42C5-8671-EE162FE2DBB1?api-version=2021-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/8DCFD7B5-6B0D-4008-BE71-4026CB0EE84D?api-version=2021-12-01
   response:
     body:
-      string: '{"id":"https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/2A715E2F-13FA-42C5-8671-EE162FE2DBB1?api-version=2021-12-01","name":"2a715e2f-13fa-42c5-8671-ee162fe2dbb1","status":"Succeeded"}'
+      string: '{"id":"https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.EventGrid/locations/eastus2euap/operationsStatus/8DCFD7B5-6B0D-4008-BE71-4026CB0EE84D?api-version=2021-12-01","name":"8dcfd7b5-6b0d-4008-be71-4026cb0ee84d","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
@@ -369,7 +369,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 05 Nov 2021 06:34:24 GMT
+      - Fri, 19 Nov 2021 08:08:46 GMT
       expires:
       - '-1'
       pragma:
