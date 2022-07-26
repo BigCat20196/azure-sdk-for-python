@@ -8,8 +8,11 @@ from testcase import (LoadtestingTest, LoadtestingPowerShellPreparer, TEST_ID, F
                       SUBSCRIPTION_ID)
 from pathlib import Path
 import os
+from pathlib import Path
 
-DISPLAY_NAME = "new_namespace-new-namespace"  # display name
+from testcase import LoadtestingTest, LoadtestingPowerShellPreparer
+
+DISPLAY_NAME = "diplay_name"  # display name
 
 class LoadtestingSmokeTest(LoadtestingTest):
 
@@ -39,8 +42,8 @@ class LoadtestingSmokeTest(LoadtestingTest):
     @LoadtestingPowerShellPreparer()
     def test_upload_test_file(self, loadtesting_endpoint):
         client = self.create_client(endpoint=loadtesting_endpoint)
-        body = {"file": open(os.path.join(Path(__file__).resolve().parent, "sample.jmx"), "rb")}
-        result = client.load_test_administration.upload_test_file(TEST_ID, FILE_ID, body)
+        result = client.load_test_administration.upload_test_file(TEST_ID, FILE_ID, open(
+            os.path.join(Path(__file__).resolve().parent, "sample.jmx"), "rb"))
         assert result is not None
 
     @LoadtestingPowerShellPreparer()

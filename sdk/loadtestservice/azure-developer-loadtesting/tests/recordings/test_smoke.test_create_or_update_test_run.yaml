@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: '{"testId": "a011890b-0201-004d-010d", "displayName": "new_namespace-new-namespace",
+    body: '{"testId": "some-test-id", "displayName": "new_namespace-new-namespace",
       "requestSamplers": [], "errors": [], "percentiles": ["90"], "groupByInterval":
       "5s"}'
     headers:
